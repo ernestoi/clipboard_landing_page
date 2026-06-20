@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Heebo:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+:root{
+    --background-blanco: #fcfcfc;
+    --background-verde: #26bba5;
+    --background-azul: #6174ff;
+    --background-blanco-oscuro: #f5f6f8;
+    --color-gris-claro: #b5b5b5;
+    --color-negro: #5a5f63;
+    --color-blanco: #ffff;
+    --border-verde: #2b9988;
+    --border-azul: #4654be;
+}
+body{
+    background-color: var(--background-blanco);
+    font-family: "Poppins", sans-serif;
+}
+.hero{
+    width: 100%;
+    background-image: url("img/bg-header-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10rem;
+}
+.hero-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    margin-top: 10rem;
+    padding: 0 2rem;
+}
+.download__img{
+    width: 100%;
+    margin-bottom: 3.5rem;
+}
+.hero__info{
+    width: 95%;
+}
+.hero__info .title{
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    color: var(--color-negro);
+}
+.hero__info .description{
+    font-size: 1.6rem;
+    color: var(--color-gris-claro);
+}
+.download__buttons{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.download__buttons .btn-download{
+    padding: 2rem 0;
+    border-radius: 3rem;
+    border: none;
+    color: var(--color-blanco);
+    font-size: 2rem;
+    font-weight: 500;
+    letter-spacing: .1rem;
+}.download__buttons .btn-ios{
+    background-color: var(--background-verde);
+    border-bottom: .5rem solid var(--border-verde);
+}
+.download__buttons .btn-mac{
+    background-color: var(--background-azul);
+    border-bottom: .5rem solid var(--border-azul);
+}
+.container-main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.features-content{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    margin-bottom: 20rem;
+}
+.feature__intro{
+    width: 100%;
+    padding: 0 1.5rem;
+}
+.feature__intro .title{
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--color-negro);
+    margin-bottom: 1.5rem;
+}
+.feature__intro .description{
+    color: var(--color-gris-claro);
+    font-size: 1.6rem;
+}
+.feature__img{
+    width: 80%;
+}
+.feature__img img{
+    width: 100%;
+}
+.feature__list{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+}
+.feature__list > div{
+    width: 100%;
+    padding: 0 1.5rem;
+}
+.feature__list .subtitle{
+    color: var(--color-negro);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.feature__list .description{
+    color: var(--color-gris-claro);
+    font-size: 1.8rem;
+}
+
+/* SECCION 2 ACCES CLIPBOARD ANYWHERE*/
+.access__section{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+}
+.access__intro{
+    width: 100%;
+    text-align: center;
+    padding: 0 1.5rem;
+    margin-bottom: 8rem;
+}
+.access__intro .title{
+    color: var(--color-negro);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.access__intro .description{
+    color: var(--color-gris-claro);
+    font-size: 1.8rem;
+}
+.access__img{
+    margin: 0 auto;
+    width: 80%;
+}
+.access__img img{
+    width: 100%;
+}
+
+/* SECCION 3 - WORKFLOW*/
+.workflow__section{
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 15rem;
+}
+.workflow__intro{
+    width: 100%;
+    margin-bottom: 2rem;
+}
+.workflow__intro .title{
+    color: var(--color-negro);
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+.workflow__intro .description{
+    font-size: 1.8rem;
+    color: var(--color-gris-claro);
+    
+}
+.workflow__grid{
+    width: 100%;
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+.workflow__grid .title{
+    color: var(--color-negro);
+    font-size: 2rem;
+    font-weight: 600;
+    
+}
+.workflow__grid .description{
+    color: var(--color-gris-claro);
+    font-size: 1.8rem;
+}
+.workflow__item img{
+    margin-bottom: 5rem;
+}
+.workflow__item .title{
+    margin-bottom: 1.5rem;
+}
+/* SECCION 4 BRANDS/LOGOS DE EMPRESAS*/
+.brands__section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    margin-bottom: 10rem;
+}
+/* seccion 5 - descargar*/
+.container-cta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    padding: 0 2rem;
+    text-align: center;
+    margin-bottom: 15rem;
+}
+.cta__info{
+    width: 90%;
+}
+.cta__info .title{
+    color: var(--color-negro);
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.cta__info .description{
+    color: var(--color-gris-claro);
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+/* FOOTER*/
+.container-footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-blanco-oscuro);
+}
+.about-us__section{
+    text-align: center;
+    width: 90%;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.anchor-text{
+    margin-bottom: 5rem;
+}
+.anchor-text ul{
+    list-style: none;
+    font-size: 2rem;
+    color: var(--color-gris-claro);
+    
+}
+.anchor-text ul li{
+    margin-bottom: 2rem;
+}
+.social-network__brands{
+    display: flex;
+    gap: 4rem;
+    justify-content: center;
+}
+.about-us__section .social-network__brands img{
+    width: 3rem;
+}
