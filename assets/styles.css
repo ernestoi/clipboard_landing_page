@@ -334,7 +334,7 @@ body{
     }
     .features-content{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1.5fr;
         grid-template-areas: "header header" 
                             "imagen contenido";
         align-items: center;
