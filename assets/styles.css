@@ -75,7 +75,13 @@ body{
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: .1rem;
-}.download__buttons .btn-ios{
+    transition: .5s ease;
+    cursor: pointer;
+}
+.btn-download:hover{
+    opacity: .5;
+}
+.download__buttons .btn-ios{
     background-color: var(--background-verde);
     border-bottom: .5rem solid var(--border-verde);
 }
@@ -284,6 +290,11 @@ body{
 }
 .anchor-text ul li{
     margin-bottom: 2rem;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.anchor-text ul li:hover{
+    color: var(--background-verde);
 }
 .social-network__brands{
     display: flex;
@@ -292,4 +303,142 @@ body{
 }
 .about-us__section .social-network__brands img{
     width: 3rem;
+    cursor: pointer;  
+}
+
+@media(min-width: 70rem){
+    .hero{
+    width: 100%;
+    background-image: url("img/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10rem;
+    }
+    .hero-content{
+        width: 75rem;
+        margin: 10rem auto;
+    }
+    .hero-content .download__buttons{
+        width: 100%;
+        display: flex;
+        flex-direction:row;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .download__buttons .btn-download{
+        padding: 2rem 3.5rem
+    }
+    .features-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "header header" 
+                            "imagen contenido";
+        align-items: center;
+    }
+    .feature__intro{
+        grid-area: header;
+        width: 53%;
+        margin: 0 auto;
+    }
+    .feature__img{
+        grid-area: imagen;
+        transform: translateX(-18%);
+        
+    }
+    .feature__img img{
+        width: 90rem;
+    }
+    .feature__list{
+        grid-area: contenido;
+        text-align: left;
+    }
+    .workflow__section{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas: "header" "contenido";
+    }
+    .workflow__intro{
+        grid-area: header;
+    }
+    .workflow__grid{
+        grid-area: contenido;
+        display: flex;
+        flex-direction: row;
+    }
+    .workflow__grid > div{
+        flex: 1;
+        display: grid;
+        align-content: center;
+        justify-items: center;
+        text-align: center;
+        height: 100%;
+    }
+    .brands__section{
+        display: flex;
+        flex-direction: row;
+        margin:10rem 0 20rem 0;
+    }
+    .container-cta{
+        width: 75rem;
+    }
+    .container-cta .download__buttons{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+    .download__buttons .btn-download{
+        width: 45%;
+    }
+
+    /* SECCION DEL FOOTER FINAL*/
+    .container-footer{
+        width: 100%;
+    }
+    .about-us__section{
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        text-align: center;
+        align-items: center;
+        margin: 0;
+        padding: 4rem 1rem;
+    }
+    .content__img img{
+        width: 6rem;
+        height: 6rem;
+        object-fit: contain;
+        
+    }
+    .anchor-text{
+        width: 100%;
+        display: grid;
+        justify-content: center;
+    }
+    .anchor-text{
+        display: grid;
+        align-content: center;
+        height: 100%;
+        margin: 0;
+    }
+    .anchor-text ul{
+        display: flex;
+        gap:6rem;
+        flex-wrap: wrap;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        margin: 0;
+        padding:0;
+    }
+    .anchor-text ul li{
+        margin: 0;
+    }
+    .social-network__brands img{
+        width: 3rem;
+        height: 3rem;
+        object-fit: contain;
+    }
 }
